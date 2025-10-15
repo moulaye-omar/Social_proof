@@ -1,0 +1,116 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+.mobile{
+    display: none;
+}
+section{
+    width: 60rem;
+}
+#users{
+    display: flex;
+    margin-bottom: 30px;
+}
+#users h1{
+    color: #4b0a63;
+}
+#users > div:first-child{
+    width: 33%;
+    margin-left: 10px;
+}
+#users > div:first-child p{
+    line-height: 20px;
+}
+#users > div:last-child{
+    margin: 35px 0 0 50px;
+    width: 75%;
+}
+#users > div:last-child div{
+    width: 75%;
+    border-radius: 10px;
+    padding: 12px 20px ;
+    background: #f5f1f7;
+    margin: 10px;
+}
+#users > div:last-child div:hover{
+    background: #dbdada;
+}
+#users > div:last-child div:first-child{
+    margin-left: 5rem;
+}
+#users > div:last-child div:nth-child(2){
+    margin-left: 2.5rem;
+}
+#users > div:last-child div:last-child{
+    margin-left: 0rem;
+}
+
+i{
+    color: gold;
+}
+#projet > div:first-child{
+    display: flex;
+}
+#projet div:first-child div{
+    flex: 1;
+}
+.photext img{
+    height: 50px;
+    width: 50px;
+    clip-path: circle();
+    float: left;
+}
+.photext h3{
+    margin: 0 60px;
+}
+.photext{
+    padding: 25px 20px;
+    margin: 10px;
+    border-radius: 15px;
+    background: #4b0a63;
+    color: white;
+}
+.photext:hover{
+    background: #8f33ad;
+}
+.photext p{
+    margin: 30px 0 0;
+}
+#projet   p:first-of-type{
+    margin: 0px 70px ;
+}
+#projet p:last-of-type{
+    padding: 0px;
+}
+
+@media (max-width:768px) {
+    #users{
+        flex-direction: column;
+        text-align: center;
+    }
+    #users div{
+        width: 100% !important;
+        margin: 10px 0px !important;
+    }
+    #users > div:last-child div{
+        margin-left: 0 !important;
+        padding:10px 0 !important;
+        text-align: center;
+    }
+    #projet div:first-child{
+        flex-direction: column;
+        justify-self: center;
+    }
+    .mobile{
+        display: block;
+    }
+    .photext{
+        margin: 8px  0;
+        max-width: 20rem;
+        justify-self: center;
+    }
+    
+}
